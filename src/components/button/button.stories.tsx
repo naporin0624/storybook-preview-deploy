@@ -10,3 +10,6 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args}>button</Button>;
 export const Default = Template.bind({});
+Default.args = {
+  disabled: false
+};

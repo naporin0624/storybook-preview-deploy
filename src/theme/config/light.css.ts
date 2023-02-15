@@ -4,7 +4,12 @@ import { vars } from "./base.css";
 
 export const lightTheme = createTheme(vars, {
   color: {
-    brand: "pink",
+    text: "#2d2d2d",
+    white:"#ededed" 
+  },
+  bg: {
+   primary: "#0068b7",
+   disabled: "rgba(0, 0, 0, 0.12)"
   },
   font: {
     body: "comic sans ms",
