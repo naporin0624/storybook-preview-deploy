@@ -22,6 +22,7 @@ module.exports = {
 
     return mergeConfig(config, {
       ...userConfig,
+      base: process.env.STORYBOOK_BASE ?? "/",
       plugins: [require("@vanilla-extract/vite-plugin").vanillaExtractPlugin()],
     });
   },
