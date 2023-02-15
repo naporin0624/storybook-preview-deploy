@@ -6,6 +6,7 @@ import { vars } from "theme";
  * @package
  */
 export const container = style({
+  all: "unset",
   color: vars.color.text,
   padding: "0.25em 0.5em",
   borderRadius: "0.5em",
