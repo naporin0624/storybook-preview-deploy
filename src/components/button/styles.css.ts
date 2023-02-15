@@ -17,6 +17,7 @@ export const container = style({
   },
   ":disabled": {
     background: vars.bg.disabled,
+    cursor: "default",
     outline: "none"
   }
 });
