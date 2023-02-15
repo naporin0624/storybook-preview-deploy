@@ -1,0 +1,28 @@
+name: Deploy PR to preview repository
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened closed]
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build-storybook
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./storybook-static/
