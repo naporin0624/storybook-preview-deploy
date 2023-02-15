@@ -7,7 +7,7 @@ export const vars = createThemeContract({
   },
   bg: {
     primary: null,
-    disabled: null
+    disabled: null,
   },
   font: {
     body: null,

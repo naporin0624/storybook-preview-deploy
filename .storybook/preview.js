@@ -1,4 +1,4 @@
-import { themeDecorator } from './decorators/theme-decorator'
+import { themeDecorator } from "./decorators/theme-decorator";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,4 +10,4 @@ export const parameters = {
   },
 };
 
-export const decorators = [themeDecorator]
+export const decorators = [themeDecorator];
