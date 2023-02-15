@@ -13,11 +13,11 @@ export const container = style({
   borderRadius: "0.5em",
   transition: "background 0.3s ease-in-out",
   ":focus": {
-    outline: "solid"
+    outline: "solid",
   },
   ":disabled": {
     background: vars.bg.disabled,
     cursor: "default",
-    outline: "none"
-  }
+    outline: "none",
+  },
 });

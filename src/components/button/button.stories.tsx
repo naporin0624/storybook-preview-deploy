@@ -10,9 +10,13 @@ export default {
   component: Button,
 };
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} onClick={action("click")} onFocus={action("focus")} onBlur={action("blur")}>button</Button>;
+const Template: Story<ButtonProps> = (args) => (
+  <Button {...args} onClick={action("click")} onFocus={action("focus")} onBlur={action("blur")}>
+    button
+  </Button>
+);
 export const Default = Template.bind({});
 
 Default.args = {
-  disabled: false
+  disabled: false,
 };

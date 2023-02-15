@@ -1,7 +1,7 @@
 name: Deploy Storybook
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -16,8 +16,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-          cache: 'npm'
+          node-version: "16"
+          cache: "npm"
 
       - name: Install & Build
         run: |
@@ -25,7 +25,6 @@ jobs:
 
           npm install
           npm run build-storybook
-
 
       - name: Deploy Storybook with gh-pages
         run: |
