@@ -15,4 +15,4 @@ Default.args = {
   disabled: false
 };
 `,locationsMap:{default:{startLoc:{col:37,line:11},endLoc:{col:80,line:11},startBody:{col:37,line:11},endBody:{col:80,line:11}}}}},title:"components/Button",component:r},p=n(t=>e(r,{...t,children:"button"}),"Template"),u=p.bind({});u.args={disabled:!1};const _=["Default"];export{u as Default,_ as __namedExportsOrder,b as default};
-//# sourceMappingURL=button.stories-a9c7919f.js.map
+//# sourceMappingURL=button.stories-81bf34e0.js.map
