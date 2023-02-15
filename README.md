@@ -4,7 +4,7 @@ The component created with react + vanilla-extract will be published with vite +
 
 A preview deploy of the storybook is created for each PR.
 
-- [main branch storybook](https://naporin0624.github.io/storybook-preview-deploy/)
+- [main branch storybook](https://naporin0624.github.io/storybook-preview-deploy/main)
 - [PR preview storybook](https://naporin0624.github.io/storybook-preview-deploy/pr-preview/pr-3/)
 - [Github Pages Branch](https://github.com/naporin0624/storybook-preview-deploy/tree/gh-pages)
 
@@ -90,12 +90,15 @@ jobs:
 
       - name: Install & Build
         run: |
-          export STORYBOOK_BASE="/${{ steps.repository.outputs.name }}"
+          export STORYBOOK_BASE="/${{ steps.repository.outputs.name }}/main"
+
           npm install
           npm run build-storybook
+
       - name: deploy storybook
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
           folder: storybook-static
+          target-folder: main
 ```
