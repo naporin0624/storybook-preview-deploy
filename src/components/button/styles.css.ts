@@ -6,8 +6,11 @@ import { vars } from "theme";
  * @package
  */
 export const container = style({
+  all: "unset",
+  display: "revert",
+  boxSizing: "border-box",
   color: vars.color.white,
-  padding: "0.25em 0.5em",
+  padding: "0.5em 1em",
   cursor: "pointer",
   background: vars.bg.primary,
   borderRadius: "0.5em",
