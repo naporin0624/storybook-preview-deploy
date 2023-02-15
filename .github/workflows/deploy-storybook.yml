@@ -24,7 +24,7 @@ jobs:
 
       - name: Install & Build
         run: |
-          export STORYBOOK_BASE="/${{ steps.repository.outputs.name }}"
+          export STORYBOOK_BASE="/${{ steps.repository.outputs.name }}/main"
 
           npm install
           npm run build-storybook
@@ -34,3 +34,4 @@ jobs:
         with:
           branch: gh-pages
           folder: storybook-static
+          target-folder: main
