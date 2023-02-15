@@ -7,7 +7,6 @@ import { vars } from "theme";
  */
 export const container = style({
   color: vars.color.white,
-  fontSize: "1.25em",
   padding: "0.25em 0.5em",
   cursor: "pointer",
   background: vars.bg.primary,
@@ -18,6 +17,7 @@ export const container = style({
   },
   ":disabled": {
     background: vars.bg.disabled,
+    cursor: "default",
     outline: "none"
   }
 });
