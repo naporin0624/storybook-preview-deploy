@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": join(__dirname, "src/"),
-      "theme": join(__dirname, "src/theme/index.ts")
+      theme: join(__dirname, "src/theme/index.ts"),
     },
   },
 });
